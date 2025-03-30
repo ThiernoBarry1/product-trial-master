@@ -17,7 +17,7 @@ https://alten.arcabox.net/invitations/?share=29d6d77126b857151b56&dl=0
 
 Quand vous l’aurez terminé, vous pourrez l’ajouter à un GitHub et m’envoyer le lien ?
 
-## 1. Lancer les deux applications : [Front-end](#front-end) et [Back-end](#back-end)
+## 1. Lancer les deux applications : [Front-end](https://github.com/ThiernoBarry1/front) et [Back-end](https://github.com/ThiernoBarry1/shop-sapp)
 
 Ce projet comporte deux applications :
 - **Back-end** : `shop-sapp` (Spring Boot)
