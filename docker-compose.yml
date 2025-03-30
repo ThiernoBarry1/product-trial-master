@@ -1,0 +1,27 @@
+#version: "3.8"  
+services:
+  backend:
+    build:
+      context: ./back/shop-sapp
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    networks:
+      - app-network
+    # Optionnel: Il peut être utile de configurer des variables d'environnement pour attendre que la base de données soit prête, si nécessaire.
+    # Par exemple, vous pourriez utiliser un script qui vérifie que la base de données est prête avant de démarrer l'application.
+
+  frontend:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend  # Backend doit être démarré avant le frontend, mais cela ne garantit pas que le backend est prêt.
+
+networks:
+  app-network:
+    driver: bridge
