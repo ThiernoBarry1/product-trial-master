@@ -1,7 +1,7 @@
 # Guide d'utilisation
 
 D'abord, je n'ai pas lu le fichier README avant de commencer le développement. Je ne l'ai lu qu'au moment de rendre l'exercice.  
-Cependant, tout ce qui est demandé est faisable pour moi. C'est juste une question de temps.
+Cependant, tout ce qui est demandé est faisable pour moi. J'ai réalisé que le temps qui me reste avant l'entretien technique demain est insuffisant pour entammer de nouveau une phase de dev.
 
 L'instruction que j'ai reçue par e-mail est la suivante :
 
@@ -24,6 +24,7 @@ Ce projet comporte deux applications :
 - **Front-end** : Angular  
 
 ### Étapes pour démarrer les applications :  
+
 1. Placez-vous à la racine du projet `product-trial-master`.  
 2. Exécutez la commande suivante pour démarrer les applications (back et front) via Docker :
 
@@ -32,18 +33,26 @@ docker-compose up --build
 ```
 Si tout se passe bien :
 
-    - Le back-end sera accessible sur http://localhost:8083
+- Le back-end sera accessible sur
+  
+          http://localhost:8083
 
-    - Le front-end sera accessible sur http://localhost:4200
+    - Le front-end sera accessible sur
+    
+           http://localhost:4200
 
 ### 2. Identifiants de connexion
 
 L'application Angular est protégée par une page de connexion.
 
 Deux utilisateurs sont créés au lancement de l'application, avec des rôles distincts :
+
 Nom d'utilisateur	Mot de passe	Rôle
+
 user	                12	        USER
+
 admin	               123	        ADMIN
+
 
 ### 3. Points clés
 
